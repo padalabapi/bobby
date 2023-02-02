@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class example {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int i,j,target,n;
+        n = sc.nextInt();
+        target = sc.nextInt();
+        int arr[] = new int[n];
+        for(i=0;i<=arr.length;i++)
+        {
+            for(j=0;j<=arr.length;j++)
+            {
+                if(arr[i]+arr[j]==target){
+                    System.out.print(i+","+j);
+                    break;
+                }
+
+            }
+        }
+
+    }
+}
